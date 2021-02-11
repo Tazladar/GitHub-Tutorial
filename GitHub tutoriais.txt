@@ -1,0 +1,44 @@
+Este .txt é um tutorial "quebrado" sobre: Fetch, Pull, Bare e Tag.
+
+-- Fetch --
+
+1 - git fetch <- Baixa os arquivos mas n faz um Merge(fica temporario no .git)
+
+2 - git rebase <- Após o fetch, adiciona os arquivos na Branch
+
+-- Pull --
+
+1 - git pull <- Abre um editor de texto, aperte Ctrl+O para fazer o fetch e o rebase
+
+-- Bare --
+
+1 - git init --bare <- Quando um colaborador comitar, ele será obrigado a inserir suas credenciais(identificação)
+
+2 - git clone meu diretorio/pasta .
+
+-- Tag --
+
+1 - git tag nome_da_tag ou versão_da_tag <- Gera uma versão pronta para uso(Ex.: versão 1.0 - Sua primeira Release)
+
+2 - git push origin nome_da_tag <- Para sua tag ficar visível para os outros colaboradores
+
+3 - git tag <- visualiza a tag
+
+4 - git checkout nome_da_tag <- Visualiza os arquivos da Tag
+
+Obs.: 
+    *Tags não são possíveis comitar !!
+
+    *Para comitar algo na versao, voce precisa criar uma Branch com o comando:
+
+1 - git switch -c nome_da_branch(Ex: Correção_V1.0)
+
+    *Para adicionar a nova versão, seguir passos:
+
+1 - git checkout master
+
+2 - git rebase Correção_V1.0
+
+3 - git tag nome_da_tagV1.1
+
+4 - git push origin nome_da_tagV1.1
