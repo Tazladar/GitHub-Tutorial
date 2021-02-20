@@ -1,0 +1,11 @@
+Primeiro você loga com suas credenciais no terminal, Ex.:
+$git config user.name "NOME_DE_USUARIO"
+$git config user.email "SEU_EMAIL@"
+
+Caso: você está em outra máquina que ja tem um usuario e email setado no VS Code ou apenas desejar mudar de conta.
+No terminal:
+$git config --unset credential.helper
+$git config credential.helper store
+$git remote set-url origin https://DIGITAR_AQUI_O_ENDEREÇO_DO_PROJETO_NO_GIT
+Para checar:
+$git remote -v
