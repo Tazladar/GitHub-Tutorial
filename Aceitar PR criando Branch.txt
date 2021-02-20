@@ -1,0 +1,6 @@
+Se você deseja aceitar um pull request e criar uma branch para teste, faça no terminal:
+$git fetch origin pull/(ID_DO_PR)/head:(NOME_DA_BRANCH)
+$git checkout (NOME_DA_BRANCH)
+
+Para verificar as atualizações do Git:
+$git log
